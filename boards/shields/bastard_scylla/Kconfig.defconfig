@@ -1,0 +1,29 @@
+if SHIELD_BASTARD_SCYLLA_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "Bastard_Scylla"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif # SHIELD_BASTARD_SCYLLA_LEFT
+
+if SHIELD_BASTARD_SCYLLA_LEFT || SHIELD_BASTARD_SCYLLA_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif # SHIELD_BASTARD_SCYLLA_LEFT || SHIELD_BASTARD_SCYLLA_RIGHT
+
+if SHIELD_BASTARD_SCYLLA_LEFT || SHIELD_BASTARD_SCYLLA_RIGHT || SHIELD_BASTARD_SCYLLA_DONGLE
+
+    config ZMK_SPLIT
+        default y
+
+    config ZMK_STUDIO
+        default y
+
+    config ZMK_BATTERY_REPORTING
+        default y
+
+endif
