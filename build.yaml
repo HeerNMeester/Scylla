@@ -1,66 +1,4 @@
-# This file generates the GitHub Actions matrix.
-# For simple board + shield combinations, add them to the top level board and
-# shield arrays, for more control, add individual board + shield combinations
-# to the `include` property. You can also use the `cmake-args` property to
-# pass flags to the build command, `snippet` to add a Zephyr snippet, and
-# `artifact-name` to assign a name to distinguish build outputs from each other:
-#
-# board: [ "nice_nano" ]
-# shield: [ "corne_left", "corne_right" ]
-# include:
-#   - board: bdn9_rev2
-#   - board: nice_nano
-#     shield: reviung41
-#   - board: nice_nano
-#     shield: corne_left
-#     snippet: studio-rpc-usb-uart
-#     cmake-args: -DCONFIG_ZMK_STUDIO=y
-#     artifact-name: corne_left_with_studio
-#
----
-# build.yaml
-#include:
-  # =========================================================
-  # OPTIE 1: ZONDER DONGLE (Standaard - Linkerkant is de baas)
-  # Haal de '#' weg bij deze regels om dit te gebruiken:
-  # =========================================================
-  
-  # - board: nice_nano
-  #   shield: bastard_scylla_left
-  #   snippet: studio-rpc-usb-uart
-  #   cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"Scylla\" -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=y -DCONFIG_ZMK_USB=y -DCONFIG_ZMK_SPLIT_BLE_CENTRAL_PERIPHERALS=1 -DCONFIG_ZMK_SPLIT_BLE_CENTRAL_BATTERY_LEVEL_FETCHING=y -DCONFIG_ZMK_SPLIT_BLE_CENTRAL_BATTERY_LEVEL_PROXY=y
-  # 
-  # - board: nice_nano
-  #   shield: bastard_scylla_right
-
-
-  # =========================================================
-  # OPTIE 2: MET DONGLE (Dongle is baas, 3x nice!nano v2)
-  # Deze optie staat nu AAN:
-  # =========================================================
-  
-  # 1. De Dongle (Deze zit in je PC via USB)
-  #- board: nice_nano
-  #  shield: bastard_scylla_dongle
-  #  snippet: studio-rpc-usb-uart
-  #  cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"Scylla_Dongle\" -DCONFIG_ZMK_STUDIO=y
-
-  # 2. De Linkerkant (Werkt nu op batterij, verbindt met dongle)
-  #- board: nice_nano
-  #  shield: bastard_scylla_left
-
-  # 3. De Rechterkant (Werkt op batterij, verbindt met dongle)
-  #- board: nice_nano
-  #  shield: bastard_scylla_right
-
-
-  # =========================================================
-  # ALTIJD HANDIG: Settings Reset (voor Bluetooth problemen)
-  # =========================================================
-  #- board: nice_nano
-  #  shield: settings_reset
-    
-    include:
+include:
   # 1. De Dongle (PC-kant)
   - board: nice_nano_v2
     shield: bastard_scylla_dongle
@@ -75,6 +13,6 @@
   - board: nice_nano_v2
     shield: bastard_scylla_right
 
-  # 4. Settings Reset (Voor noodgevallen)
+  # 4. Settings Reset (Voor Bluetooth problemen)
   - board: nice_nano_v2
     shield: settings_reset
