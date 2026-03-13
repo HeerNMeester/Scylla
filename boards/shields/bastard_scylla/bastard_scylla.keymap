@@ -41,7 +41,7 @@
     &kp LSHIFT 	&kp A  		&kp S  		&kp D  		&kp F  		&kp G     			&kp H  		&kp J  		&kp K     	&kp L   	&kp SEMI 	&kp SQT
     &kp LCTRL  	&kp Z  		&kp X  		&kp C  		&kp V  		&kp B     			&kp N  		&kp M  		&kp COMMA 	&kp DOT		&kp FSLH 	&kp EQUAL
 										&mo 1		&kp LSHIFT 	&kp SPACE	  		&kp ENTER	&kp RGUI 	&mo 2 		
-													&kp LCTRL	&kp BACKSPACE  	  	&kp DEL 	&kp RALT		
+													&kp LCTRL	&kp DEL				&kp BACKSPACE &kp RALT		
             >;
         };
 
