@@ -18,6 +18,8 @@
         combo_rbkt  { bindings = <&kp RBKT>; key-positions = <31 32>; layers = <0>; };
         combo_lpar  { bindings = <&kp LEFT_PARENTHESIS>; key-positions = <39 40>; layers = <0>; };
         combo_rpar  { bindings = <&kp RIGHT_PARENTHESIS>; key-positions = <43 44>; layers = <0>; };
+		
+		combo_rgui	{ bindings = <&kp RGUI>; key-positions = <46 47>; layers = <0>; };
 
 		combo_bslh  { bindings = <&kp BACKSLASH>; key-positions = <17 18>; layers = <0>; };
         combo_pipe  { bindings = <&kp PIPE>; key-positions = <29 30>; layers = <0>; };
@@ -40,8 +42,8 @@
     &kp TAB    	&kp Q  		&kp W  		&kp E  		&kp R  		&kp T     			&kp Y  		&kp U  		&kp I     	&kp O   	&kp P    	&kp BSLH
     &kp LSHIFT 	&kp A  		&kp S  		&kp D  		&kp F  		&kp G     			&kp H  		&kp J  		&kp K     	&kp L   	&kp SEMI 	&kp SQT
     &kp LCTRL  	&kp Z  		&kp X  		&kp C  		&kp V  		&kp B     			&kp N  		&kp M  		&kp COMMA 	&kp DOT		&kp FSLH 	&kp EQUAL
-										&mo 1		&kp LSHIFT 	&kp SPACE	  		&kp ENTER	&kp RGUI 	&mo 2		
-													&kp LCTRL	&kp DEL				&kp BACKSPACE &kp LALT		
+										&mo 1		&kp LSHIFT 	&kp SPACE	  		&kp ENTER	&kp RSHIFT 	&mo 2		
+													&kp LALT	&kp DEL				&kp BACKSPACE &kp RALT		
             >;
         };
 
