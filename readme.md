@@ -9,7 +9,7 @@ This is my personal setup including Nice!Nano v2 Clones and my keymap. There are
 - Dongle,
 - Dongle with screen.
 
-Dongle only code copied from: [mbuzzo])https://codeberg.org/mbuzzo/zmk-keyboards-scylla/src/branch/main)
+Dongle only code copied from: [mbuzzo](https://codeberg.org/mbuzzo/zmk-keyboards-scylla/src/branch/main)
 Dongle + screen code from: [englmaxi](https://github.com/englmaxi/zmk-dongle-display?tab=readme-ov-file)
 
 I'm using pro switch PCB's from [Kissetfall](https://github.com/kissetfall/su120-keyboard/releases/tag/gerber)
